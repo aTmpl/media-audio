@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content=text/html; charset=UTF-8>
+<title>Audioplayer - Media Audio</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="publisher" href="https://plus.google.com/106292100743979527533"/>
+<script src="http://atmpl.ru/assets/js/jquery-1.10.2.js"></script>
+<script src="mediaelement-and-player.min.js"></script>
+<link href="progression-player.css" rel="stylesheet" />
+<link href="font-awesome.min.css" rel="stylesheet" />
+<link href="skin-fancy.css" rel="stylesheet" />
+<link href="skin-default-dark.css" rel="stylesheet" />
+</head>
+<body>
+<div class="responsive-wrapper responsive-audio">
+<audio class="progression-single progression-skin progression-skin" controls="controls" preload="none" autoplay>
+<source src="http://atmpl.ru/design/adaptive-audio/2015/media-audio/aTmplDemoMuzik1.mp3" type="audio/mp3"/>
+</audio>
+</div>
+<div class="responsive-wrapper responsive-audio">
+<audio class="progression-single progression-skin progression-fancy" controls="controls" preload="none">
+<source src="http://atmpl.ru/design/adaptive-audio/2015/media-audio/aTmplDemoMuzik1.mp3" type="audio/mp3"/>
+</audio>
+</div>
+<div class="responsive-wrapper responsive-audio">
+<audio class="progression-single progression-skin progression-default-dark" controls="controls" preload="none">
+<source src="http://atmpl.ru/design/adaptive-audio/2015/media-audio/aTmplDemoMuzik1.mp3" type="audio/mp3"/>
+</audio>
+</div>
+<script>
+$('.progression-single').mediaelementplayer({
+features: ['playpause','current','progress','duration','volume']
+});
+</script>
+</body>
+</html>
